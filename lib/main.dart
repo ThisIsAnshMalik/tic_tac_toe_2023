@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tic_tac_toe_2023/res/Colors/app_colors.dart';
 import 'package:tic_tac_toe_2023/res/localization/languages.dart';
 import 'package:tic_tac_toe_2023/res/routes/routes.dart';
 
@@ -21,9 +22,9 @@ class MyApp extends StatelessWidget {
       locale: const Locale("en", "US"),
       fallbackLocale: const Locale('en', 'US'),
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      themeMode: ThemeMode.dark,
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: AppColor.primaryColor),
       getPages: AppRoutes.appRoutes(),
     );
   }
