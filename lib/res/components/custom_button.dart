@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   final VoidCallback ontap;
-  final String buttonText;
+  final Widget buttonText;
   const CustomButton({Key? key, required this.ontap, required this.buttonText})
       : super(key: key);
 
@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
         onPressed: ontap,
         style:
             ElevatedButton.styleFrom(minimumSize: Size(width, height * 0.06)),
-        child: Text(buttonText),
+        child: buttonText,
       ),
     );
   }

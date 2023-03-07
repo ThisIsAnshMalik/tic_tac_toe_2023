@@ -19,7 +19,11 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomButton(ontap: () {}, buttonText: "Online"),
+            CustomButton(
+                ontap: () {
+                  Get.toNamed(RouteName.createRoomView);
+                },
+                buttonText: const Text("Online")),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.02,
             ),
@@ -27,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ontap: () {
                   Get.toNamed(RouteName.offlineGameView);
                 },
-                buttonText: "offline")
+                buttonText: const Text("offline"))
           ],
         ),
       ),
