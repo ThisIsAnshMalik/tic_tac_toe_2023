@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tic_tac_toe_2023/res/components/custom_button.dart';
+import 'package:tic_tac_toe_2023/res/routes/routes_name.dart';
 
 class HomeScreen extends StatefulWidget {
-  static String routeName = "/home-screen";
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -22,7 +23,11 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.02,
             ),
-            CustomButton(ontap: () {}, buttonText: "offline")
+            CustomButton(
+                ontap: () {
+                  Get.toNamed(RouteName.offlineGameView);
+                },
+                buttonText: "offline")
           ],
         ),
       ),
