@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
 import 'package:tic_tac_toe_2023/res/routes/routes_name.dart';
-import 'package:tic_tac_toe_2023/view/game/offline_game/screen/offline_game_screen.dart';
 import 'package:tic_tac_toe_2023/view/home/screen/home_screen.dart';
+
+import '../../view/offline_game/screen/offline_game_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [
