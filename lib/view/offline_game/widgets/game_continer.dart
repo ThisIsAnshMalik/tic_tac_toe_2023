@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tic_tac_toe_2023/res/Colors/app_colors.dart';
-import 'package:tic_tac_toe_2023/utils/utils.dart';
-import 'package:tic_tac_toe_2023/view/Offline_Game/offline_game/controller/offline_game_controller.dart';
+import 'package:tic_tac_toe_2023/view/offline_game/controller/offline_game_controller.dart';
 
 class GameContainer extends StatelessWidget {
   GameContainer({Key? key}) : super(key: key);

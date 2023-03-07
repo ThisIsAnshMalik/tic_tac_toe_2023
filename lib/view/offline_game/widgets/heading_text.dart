@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../../res/Colors/app_colors.dart';
 import '../controller/offline_game_controller.dart';
 

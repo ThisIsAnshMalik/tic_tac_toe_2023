@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tic_tac_toe_2023/res/Colors/app_colors.dart';
-import 'package:tic_tac_toe_2023/view/Offline_Game/offline_game/controller/offline_game_controller.dart';
-import 'package:tic_tac_toe_2023/view/Offline_Game/offline_game/widgets/game_continer.dart';
-import 'package:tic_tac_toe_2023/view/Offline_Game/offline_game/widgets/heading_text.dart';
-import 'package:tic_tac_toe_2023/view/Offline_Game/offline_game/widgets/restart_button.dart';
+import 'package:tic_tac_toe_2023/view/offline_game/controller/offline_game_controller.dart';
+import 'package:tic_tac_toe_2023/view/offline_game/widgets/game_continer.dart';
+import 'package:tic_tac_toe_2023/view/offline_game/widgets/heading_text.dart';
+import 'package:tic_tac_toe_2023/view/offline_game/widgets/restart_button.dart';
 
 class OfflineGameScreen extends StatefulWidget {
   const OfflineGameScreen({Key? key}) : super(key: key);
