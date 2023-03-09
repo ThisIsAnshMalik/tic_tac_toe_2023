@@ -11,4 +11,6 @@ class RouteName {
   static const String joinRoomView = '/join_room_view';
 
   static const String onlineGameView = '/online_game_view';
+
+  static const String onlineOptionView = '/online_option_view';
 }

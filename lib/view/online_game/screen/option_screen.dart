@@ -3,14 +3,14 @@ import 'package:get/get.dart';
 import 'package:tic_tac_toe_2023/res/components/custom_button.dart';
 import 'package:tic_tac_toe_2023/res/routes/routes_name.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class OnlineOptionScreen extends StatefulWidget {
+  const OnlineOptionScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<OnlineOptionScreen> createState() => _OnlineOptionScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _OnlineOptionScreenState extends State<OnlineOptionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,17 +21,17 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             CustomButton(
                 ontap: () {
-                  Get.toNamed(RouteName.onlineOptionView);
+                  Get.toNamed(RouteName.createRoomView);
                 },
-                buttonText: const Text("Online")),
+                buttonText: const Text("Create Room")),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.02,
             ),
             CustomButton(
                 ontap: () {
-                  Get.toNamed(RouteName.offlineGameView);
+                  Get.toNamed(RouteName.joinRoomView);
                 },
-                buttonText: const Text("offline"))
+                buttonText: const Text("Join Room"))
           ],
         ),
       ),

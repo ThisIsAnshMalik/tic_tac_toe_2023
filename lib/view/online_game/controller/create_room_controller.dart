@@ -28,7 +28,7 @@ class CreateRoomController extends GetxController {
         loading.value = false;
         debugPrint("room created");
         Utils.snackBar("Created", "room created");
-        Get.offNamed(RouteName.onlineGameView);
+        Get.offNamed(RouteName.onlineGameView, arguments: {roomId});
       }).onError((error, stackTrace) {
         loading.value = false;
         debugPrint("error in creating room :- ${error.toString()}");
